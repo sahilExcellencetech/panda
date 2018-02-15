@@ -12,11 +12,34 @@
   color: white;
 }
 
+#register-form-button{
+  height: 50px;
+  width: 100%;
+  background-color: #4ad3b3;
+  color: white;
+}
+
+.my-div .ant-row{
+  width:100%;
+}
+
+.my-div .ant-form-item-control-wrapper{
+  width:100%;
+}
+
 input[type="text"]{
   height: 40px;
 }
 
 input[type="password"]{
+  height: 40px;
+}
+
+input[type="email"]{
+  height: 40px;
+}
+
+input[type="number"]{
   height: 40px;
 }
 
@@ -33,4 +56,9 @@ input[type="password"]{
 
 #errorMessage{
   text-align: center;
+}
+
+#fix{
+  display: inline-block;
+  width: 48%;
 }
