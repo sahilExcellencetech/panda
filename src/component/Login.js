@@ -50,7 +50,8 @@ class NormalLoginForm extends React.Component {
           Login
         </Button>
           <div id="links">
-          <a href="">Forgot password? Reset it!</a><br />
+          <Link to="/forgetpassword">Forgot password? Reset it!</Link><br />
+
           <a  href="">No Account yet? Register now!</a>
           </div>
         </FormItem>
