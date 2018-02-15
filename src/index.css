@@ -30,3 +30,7 @@ input[type="password"]{
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
+#errorMessage{
+  text-align: center;
+}

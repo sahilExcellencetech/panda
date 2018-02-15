@@ -34,12 +34,11 @@ class ForgetPassword extends React.Component {
       <Input type="text" className="input-email" />
     )}
   </FormItem>
-       <FormItem>
 
+       <FormItem>
          <div><Button  id="login-form-button" htmlType="submit" className="login-form-button">
            Reset Password
          </Button></div>
-
        </FormItem>
      </Form>
      </div>
