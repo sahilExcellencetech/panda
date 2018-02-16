@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styles from '../index.css';
-import {Form,Col,ItemLayout, Icon, Input, Button, notification, Checkbox } from 'antd';
+import {Form,Col, Input, Button, notification } from 'antd';
 import style from 'antd/dist/antd.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 
@@ -30,7 +28,7 @@ class AboutForm extends React.Component {
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
             <p>Tell everything about yourself that potential client should
             Know about you!</p>
-            <div className="my-div">
+            <div id="about-Container">
               <FormItem>
               {getFieldDecorator('about', {
                 rules: [{ required: true, message: 'Please Enter your information!' }],

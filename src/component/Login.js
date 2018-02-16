@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styles from '../index.css';
-import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
+import { Form,Col,ItemLayout, Input, notification, Button } from 'antd';
 import style from 'antd/dist/antd.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 
@@ -13,6 +11,10 @@ class NormalLoginForm extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        notification.open({
+          message: 'Successfully Logged In',
+          description: 'You are successfully Logged in.',
+        });
       }
     });
   }

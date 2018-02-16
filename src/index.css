@@ -18,15 +18,15 @@
   background-color: #4ad3b3;
   color: white;
 }
-.my-div{
+#about-Container{
   width: 100%;
 }
 
-.my-div .ant-row{
+#about-Container .ant-row{
   width:100%;
 }
 
-.my-div .ant-form-item-control-wrapper{
+#about-Container .ant-form-item-control-wrapper{
   width:100%;
 }
 

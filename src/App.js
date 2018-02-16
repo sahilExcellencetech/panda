@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import style from './index.css';
 import {Switch,BrowserRouter,Route,Link} from 'react-router-dom';
 import WrappedNormalLoginForm from './component/Login';
 import error from './component/error';
