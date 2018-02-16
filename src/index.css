@@ -18,16 +18,14 @@
   background-color: #4ad3b3;
   color: white;
 }
-#about-Container{
-  width: 100%;
-}
 
 #about-Container .ant-row{
   width:100%;
 }
 
-#about-Container .ant-form-item-control-wrapper{
-  width:100%;
+#about-Container{} .ant-form-item-control-wrapper{
+width:100%;
+
 }
 
 input[type="text"]{
@@ -64,4 +62,22 @@ input[type="number"]{
 #fix{
   display: inline-block;
   width: 48%;
+}
+
+#signalment-Input-Distance{
+  width: 45%;
+  margin-left: 10%;
+  display: inline-block;
+}
+#signalment-Input-Location{
+  width: 45%;
+  display: inline-block;
+}
+
+#signalment-h4{
+    display:inline-block;
+}
+
+#signalment-Switch{
+  float:right;
 }
