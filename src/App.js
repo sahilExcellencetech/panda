@@ -6,6 +6,7 @@ import error from './component/error.js';
 import WrappedRegisterForm from './component/Register.js';
 import WrappedAboutForm from './component/About.js'
 import WrappedForgetPasswordForm from'./component/ForgetPassword.js';
+import WrappedMyCVForm from './component/Mycv.js';
 
 const routes=(
     <BrowserRouter>
@@ -14,7 +15,9 @@ const routes=(
          <Route path="/register" component={WrappedRegisterForm} />
          <Route path="/forgetpassword" component={WrappedForgetPasswordForm}/>
          <Route path="/about" component={WrappedAboutForm}/>
+         <Route path="/mycv" component={WrappedMyCVForm}/>
          <Route component={error}/>
+
       </Switch>
     </BrowserRouter>
 );
