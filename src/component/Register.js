@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styles from '../index.css';
-import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
-import style from 'antd/dist/antd.css';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+import { Form,Col, Input, Button } from 'antd';
+
 
 const FormItem = Form.Item;
 
@@ -65,7 +62,7 @@ class RegisterForm extends React.Component {
               })(<Input  type="number"/>)}
             </FormItem>
             </div>
-            <p style={{'margin-top':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
+            <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
               when we recieve specific booking requests for you. By clicking the save
               button, you accept our general terms and our data protection regulations.</p>
               <div className="my-div" style={{width:'100%'}}>

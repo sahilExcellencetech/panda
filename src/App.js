@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {Switch,BrowserRouter,Route,Link} from 'react-router-dom';
-import WrappedNormalLoginForm from './component/Login.js';
-import error from './component/error.js';
-import WrappedRegisterForm from './component/Register.js';
-import WrappedAboutForm from './component/About.js'
-import WrappedForgetPasswordForm from'./component/ForgetPassword.js';
-import WrappedMyCVForm from './component/Mycv.js';
+import {Switch,BrowserRouter,Route} from 'react-router-dom';
+import WrappedNormalLoginForm from './component/Login';
+import error from './component/error';
+import WrappedRegisterForm from './component/Register';
+import WrappedAboutForm from './component/About';
+import WrappedForgetPasswordForm from'./component/ForgetPassword';
+import WrappedMyCVForm from './component/Mycv';
 
 const routes=(
     <BrowserRouter>

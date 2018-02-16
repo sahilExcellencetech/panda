@@ -35,7 +35,7 @@ input[type="password"]{
   height: 40px;
 }
 
-input[type="email"]{
+input[type="emaild"]{
   height: 40px;
 }
 
@@ -61,4 +61,20 @@ input[type="number"]{
 #fix{
   display: inline-block;
   width: 48%;
+}
+
+
+#professionalSince{
+width: 48%;
+min-width: 220px;
+display: inline-block;
+/* float: left; */
+margin-right: 1.5%
+}
+
+#freelancerSince {
+  width: 48%;
+  min-width: 220px;
+  display: inline-block;
+  /* float: left; */
 }
