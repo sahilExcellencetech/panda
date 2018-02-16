@@ -14,13 +14,10 @@ class AboutForm extends React.Component {
 
       if (!err) {
         console.log('Received values of form: ', values);
-        notification.open({
-  message: 'Successfully Updated',
-  description: 'Your information has been successfully updated.',
-});
-      }
-      else{
-
+          notification.open({
+            message: 'Successfully Updated',
+            description: 'Your information has been successfully updated.',
+          });
       }
     });
   }
@@ -33,7 +30,7 @@ class AboutForm extends React.Component {
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
             <p>Tell everything about yourself that potential client should
             Know about you!</p>
-            <div className="my-div" style={{width:'100%'}}>
+            <div className="my-div">
               <FormItem>
               {getFieldDecorator('about', {
                 rules: [{ required: true, message: 'Please Enter your information!' }],

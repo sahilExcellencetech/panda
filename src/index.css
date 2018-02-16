@@ -18,6 +18,9 @@
   background-color: #4ad3b3;
   color: white;
 }
+.my-div{
+  width: 100%;
+}
 
 .my-div .ant-row{
   width:100%;
