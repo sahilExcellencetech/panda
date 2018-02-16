@@ -3,14 +3,13 @@ import style from 'antd/dist/antd.css';
 import {Form, Col,Select, notification, Input, Switch, Button } from 'antd';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 
-const FormItem = Form.Item;
-const Option = Select.Option;
-
-function onChange(checked) {
-console.log(`switch to ${checked}`);
-}
 
 class SingnalmentForm extends React.Component {
+
+  onChange = (checked)=> {
+    console.log(`switch to ${checked}`);
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
@@ -27,6 +26,8 @@ class SingnalmentForm extends React.Component {
 
 
   render() {
+    const FormItem = Form.Item;
+    const Option = Select.Option;
     const { getFieldDecorator } = this.props.form;
     return (
       <Col id="col" span={10} offset={7}>
@@ -106,11 +107,11 @@ class SingnalmentForm extends React.Component {
 
         <FormItem>
         <h4 id="signalment-h4">Driver License</h4>
-          <Switch  id="signalment-Switch" defaultUnChecked onChange={onChange} />
+          <Switch  id="signalment-Switch" defaultUnChecked onChange={this.onChange} />
         </FormItem>
         <FormItem>
         <h4 id="signalment-h4">Own Car</h4>
-          <Switch id="signalment-Switch" defaultUnChecked onChange={onChange} />
+          <Switch id="signalment-Switch" defaultUnChecked onChange={this.onChange} />
         </FormItem>
         <FormItem>
           <Button htmlType="submit" id="register-form-button" className="login-form-button">
