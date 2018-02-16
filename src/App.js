@@ -7,6 +7,7 @@ import error from './component/error';
 import WrappedRegisterForm from './component/Register';
 import WrappedAboutForm from './component/About'
 import WrappedForgetPasswordForm from './component/ForgetPassword';
+import WrappedSignalmentForm from './component/Signalment'
 const routes=(
     <BrowserRouter>
       <Switch>
@@ -14,6 +15,7 @@ const routes=(
          <Route path="/register" component={WrappedRegisterForm} />
          <Route path="/forgetpassword" component={WrappedForgetPasswordForm}/>
          <Route path="/about" component={WrappedAboutForm}/>
+         <Route path="/signalment" component={WrappedSignalmentForm}/>
          <Route component={error}/>
       </Switch>
     </BrowserRouter>
