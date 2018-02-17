@@ -1,21 +1,13 @@
 import React from 'react';
 import { Form,Col, Button,Select} from 'antd';
+import _ from 'lodash';
 
 const FormItem = Form.Item;
 const { Option, } = Select;
 const x= new Date().getFullYear();
 const y = x-50;
 var foo=[];
-for (var i = x; i > y; i--) {
-   foo.push(i);
-}
-
-
-
-
-function handleChange(value) {
-  console.log(`selected ${value}`);
-}
+foo = _.range(x,y)
 
 class MyCVForm extends React.Component {
   constructor(props) {
@@ -23,6 +15,9 @@ class MyCVForm extends React.Component {
     this.state={
        data:foo,
     }
+  }
+  handleChange=(value)=> {
+    console.log(`selected ${value}`);
   }
   handleSubmit = (e) => {
     e.preventDefault();
@@ -38,7 +33,7 @@ class MyCVForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     const list=this.state.data.map((data,id)=>
-    <Option value={data}>{data}</Option>
+    <Option key={data} value={data}>{data}</Option>
     );
 
     return (
@@ -54,7 +49,7 @@ class MyCVForm extends React.Component {
                 {getFieldDecorator('Select1', {
                     rules: [{ required: true, message:'Year is required'}],
                 })(
-                    <Select placeholder="Professional Since"  onChange={handleChange}>
+                    <Select placeholder="Professional Since"  onChange={this.handleChange}>
                   {list}
                     </Select>
                   )}
@@ -66,13 +61,13 @@ class MyCVForm extends React.Component {
                       rules: [{ required: true, message:'Year is required'}],
                   })(
 
-                  <Select placeholder="Professional Since"  onChange={handleChange}>
+                  <Select placeholder="Professional Since"  onChange={this.handleChange}>
                 {list}
                   </Select>
                   )}
                     </FormItem>
                     </div>
-                
+
                 <br/>
                 <br/>
                   <p>Where you have been emploed before? Please add your employment history here.</p>
