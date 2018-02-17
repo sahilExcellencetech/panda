@@ -8,6 +8,7 @@ import WrappedAboutForm from './component/About'
 import WrappedForgetPasswordForm from'./component/ForgetPassword';
 import HomePage from './component/HomePage';
 import Calendar from './component/Calendar';
+import Profile from './component/Profile';
 
 
 const routes=(
@@ -19,6 +20,7 @@ const routes=(
          <Route path="/about" component={WrappedAboutForm}/>
          <Route path="/homepage" component={HomePage} />
          <Route path="/calendar" component={Calendar}/>
+         <Route path="/profile" component={Profile}/>
          <Route component={error}/>
       </Switch>
     </HashRouter>
