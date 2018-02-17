@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form,Col, Input, Button } from 'antd';
+
+import { Form,Col, Input, Button, notification } from 'antd';
 
 
 const FormItem = Form.Item;
@@ -10,6 +11,10 @@ class RegisterForm extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        notification.open({
+          message: 'Successfully Registered',
+          description: 'You are successfully registered on our website.',
+        });
       }
     });
   }
