@@ -1,18 +1,34 @@
 import React from 'react';
 import { Col,Form, Icon, Input, Button,Collapse} from 'antd';
 import style from '../index.css'
-const Panel = Collapse.Panel;
+import _ from'lodash';
 
+const Panel = Collapse.Panel;
+let datepanel=[];
+datepanel=_.range(14,21);
 const text = (
   <p style={{ paddingLeft: 24 }}>
     A dog is a type of domesticated animal.
     Known for its loyalty and faithfulness,
-   
   </p>
 );
-
+console.log(datepanel)
 class Calendar extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state={
+       data:datepanel,
+    }
+  }
+
     render(){
+      const list=this.state.data.map((data,id)=>
+      <Collapse bordered={false} key={data} >
+            <Panel header={data}  >{text}</Panel>
+            
+        </Collapse> 
+);
       return(
 <Col id="col-calendar" span={10} offset={6}>
   <div id="content">
@@ -21,27 +37,12 @@ class Calendar extends React.Component {
        of all ₹500 (US$7.80) and ₹1,000 (US$16) banknotes of the Mahatma Gandhi
         
       </div>
-        <h1 id="feb">February</h1>
-         <Collapse bordered={false} >
-               <Panel header="13"  key="1">
-                {text}
-                </Panel>
-                <Panel header="14" key="2">
-                {text}
-                </Panel>
-                <Panel header="15" key="3">
-                {text}
-                </Panel>
-                <Panel header="16" key="4">
-                 {text}
-                 </Panel>
-           </Collapse> 
+      <h1 id="feb">February</h1>
+    {list}
+       
      </div >
   </Col>
       );
     }
 }
-
-const WrappedCalendar = Form.create()(Calendar);
-
-export default WrappedCalendar;
+export default Calendar;
