@@ -1,8 +1,6 @@
-import ReactDOM from 'react-dom';
+
 import React from 'react';
-import styles from '../index.css';
 import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
-import style from 'antd/dist/antd.css';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 
 const error =()=> (
