@@ -3,11 +3,11 @@ import { Form,Col, Button,Select} from 'antd';
 import _ from 'lodash';
 
 const FormItem = Form.Item;
-const { Option, } = Select;
-const x= new Date().getFullYear();
-const y = x-50;
-var foo=[];
-foo = _.range(x,y)
+const { Option } = Select;
+const startYear= new Date().getFullYear();
+const endYear = startYear-50;
+let foo=[];
+foo = _.range(startYear,endYear);
 
 class MyCVForm extends React.Component {
   constructor(props) {
