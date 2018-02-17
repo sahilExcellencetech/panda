@@ -3,6 +3,7 @@ import { Form,Col, Button,Select,notification} from 'antd';
 import _ from 'lodash';
 import WrappedAddemp from './Addemp'
 
+
 const FormItem = Form.Item;
 const { Option } = Select;
 const startYear= new Date().getFullYear();
@@ -77,7 +78,9 @@ class MyCVForm extends React.Component {
                 <br/>
                   <p>Where you have been emploed before? Please add your employment history here.</p>
                   <br/>
+
                    <WrappedAddemp />
+
 
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">

@@ -1,10 +1,8 @@
 import React from 'react';
-
 import { Form,Col, Input, Button, notification } from 'antd';
 
 
 const FormItem = Form.Item;
-
 class RegisterForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
@@ -83,6 +81,7 @@ class RegisterForm extends React.Component {
                </Button>
              </FormItem>
              </div>
+
 
          </Form>
         </div>
