@@ -1,6 +1,8 @@
 import React from 'react';
+
 import { Form,Col, Input, Button } from 'antd';
 import {Link} from 'react-router-dom';
+
 
 const FormItem = Form.Item;
 
@@ -10,6 +12,10 @@ class NormalLoginForm extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        notification.open({
+          message: 'Successfully Logged In',
+          description: 'You are successfully Logged in.',
+        });
       }
     });
   }
