@@ -1,7 +1,7 @@
 import React from 'react';
-import style from 'antd/dist/antd.css';
-import { Col,Form, Input,notification, Button} from 'antd';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+import { Col,Form, Input, Button} from 'antd';
+
 const FormItem = Form.Item;
 
 class ForgetPassword extends React.Component {

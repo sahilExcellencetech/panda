@@ -1,7 +1,7 @@
 import React from 'react';
-import {Form,Col, Input, Button, notification } from 'antd';
-import style from 'antd/dist/antd.css';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+import {Form,Col, Input, Button } from 'antd';
+
 
 const FormItem = Form.Item;
 const { TextArea } = Input;
@@ -20,7 +20,7 @@ class AboutForm extends React.Component {
     });
   }
   render() {
-    const { getFieldDecorator } = this.props.form;
+    
     return (
       <Col id="col" span={10} offset={7}>
         <div id="content">

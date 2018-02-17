@@ -63,6 +63,22 @@ input[type="number"]{
   width: 48%;
 }
 
+
+
+#professionalSince{
+width: 48%;
+min-width: 220px;
+display: inline-block;
+/* float: left; */
+margin-right: 1.5%
+}
+
+#freelancerSince {
+  width: 48%;
+  min-width: 220px;
+  display: inline-block;
+  /* float: left; */
+}
 #signalment-Input-Distance{
   width: 45%;
   margin-left: 10%;
@@ -79,4 +95,5 @@ input[type="number"]{
 
 #signalment-Switch{
   float:right;
+
 }

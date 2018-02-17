@@ -1,7 +1,8 @@
 import React from 'react';
-import { Form,Col,ItemLayout, Input, notification, Button } from 'antd';
-import style from 'antd/dist/antd.css';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+import { Form,Col, Input, Button } from 'antd';
+import {Link} from 'react-router-dom';
+
 
 const FormItem = Form.Item;
 
