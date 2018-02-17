@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col,Form, Input, Button, notification} from 'antd';
-
 const FormItem = Form.Item;
 class ForgetPassword extends React.Component {
  handleSubmit = (e) => {
