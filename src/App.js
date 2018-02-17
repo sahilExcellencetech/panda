@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {Switch,HashRouter,Route} from 'react-router-dom';
 import WrappedNormalLoginForm from './component/Login';
 import error from './component/error';
@@ -7,7 +6,9 @@ import WrappedRegisterForm from './component/Register';
 import WrappedAboutForm from './component/About';
 import WrappedForgetPasswordForm from'./component/ForgetPassword';
 import WrappedMyCVForm from './component/Mycv';
-import WrappedSignalmentForm from './component/Signalment'
+import WrappedSignalmentForm from './component/Signalment';
+import HomePage from './component/HomePage';
+import Calendar from './component/Calendar';
 
 const routes=(
     <HashRouter>
@@ -17,12 +18,12 @@ const routes=(
          <Route path="/forgetpassword" component={WrappedForgetPasswordForm}/>
          <Route path="/about" component={WrappedAboutForm}/>
          <Route path="/mycv" component={WrappedMyCVForm}/>
+         <Route path="/homepage" component={HomePage} />
+         <Route path="/calendar" component={Calendar}/>
          <Route path="/signalment" component={WrappedSignalmentForm}/>
          <Route component={error}/>
 
       </Switch>
     </HashRouter>
 );
-
-
 export default routes;

@@ -1,10 +1,8 @@
 import React from 'react';
-
 import { Form,Col, Input, Button, notification } from 'antd';
 
 
 const FormItem = Form.Item;
-
 class RegisterForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
@@ -70,7 +68,8 @@ class RegisterForm extends React.Component {
             <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
               when we recieve specific booking requests for you. By clicking the save
               button, you accept our general terms and our data protection regulations.</p>
-              <div id="about-Container" >
+
+              <div id="register-Container" >
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">
                   Save now and start for free

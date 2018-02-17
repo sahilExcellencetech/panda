@@ -74,7 +74,9 @@ class SingnalmentForm extends React.Component {
           {getFieldDecorator('Distance', {
             rules: [{ required: true, message: 'Please input your Distance!' }],
           })(
-            <Input placeholder="Distance of work km" />
+
+            <Input placeholder="Distance of work               km" />
+
           )}
         </FormItem>
         </div>
