@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Form,Col, Input, Button } from 'antd';
+import {Form,Col, Input, Button, notification } from 'antd';
 
 
 const FormItem = Form.Item;
@@ -20,7 +20,7 @@ class AboutForm extends React.Component {
     });
   }
   render() {
-    
+    const { getFieldDecorator } = this.props.form;
     return (
       <Col id="col" span={10} offset={7}>
         <div id="content">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form,Col, Button,Select} from 'antd';
+import { Form,Col, Button,Select,notification} from 'antd';
 import _ from 'lodash';
 
 const FormItem = Form.Item;
@@ -24,6 +24,10 @@ class MyCVForm extends React.Component {
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        notification.open({
+          message: 'Successfully Updated',
+          description: 'Your information has been successfully updated.',
+        });
       }
     });
   }
@@ -42,7 +46,7 @@ class MyCVForm extends React.Component {
           <h1>My CV</h1>
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
             <p>When did you finish your professional education and when did you start to work as a freelancer?</p>
-            <div className="my-div" style={{width:'100%'}}>
+            <div id="mycv-Container" style={{width:'100%'}}>
 
                 <div id="professionalSince">
                 <FormItem layout="inline">
