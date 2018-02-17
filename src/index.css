@@ -28,6 +28,15 @@
 width:100%;
 }
 
+#register-Container .ant-row{
+  width:100%;
+}
+
+#register-Container .ant-form-item-control-wrapper{
+  width:100%;
+}
+
+
 input[type="text"]{
   height: 40px;
 }
