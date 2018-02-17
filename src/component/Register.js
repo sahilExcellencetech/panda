@@ -1,15 +1,17 @@
 import React from 'react'
-import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
-
+import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox ,notification} from 'antd';
 
 const FormItem = Form.Item;
-
 class RegisterForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
         console.log('Received values of form: ', values);
+        notification.open({
+          message: 'Successfully Registered',
+          description: 'You are successfully registered on our website.',
+        });
       }
     });
   }
@@ -62,10 +64,10 @@ class RegisterForm extends React.Component {
               })(<Input  type="number"/>)}
             </FormItem>
             </div>
-            <p style={{'margin-top':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
+            <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
               when we recieve specific booking requests for you. By clicking the save
               button, you accept our general terms and our data protection regulations.</p>
-              <div className="my-div" style={{width:'100%'}}>
+              <div id="register-Container" >
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">
                   Save now and start for free

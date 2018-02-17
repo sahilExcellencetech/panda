@@ -1,15 +1,14 @@
 import React from 'react';
-import {browserHistory  } from 'react-dom';
-import {Switch,HashRouter,Route,Link} from 'react-router-dom';
+import {Switch,HashRouter,Route} from 'react-router-dom';
 import WrappedNormalLoginForm from './component/Login';
 import error from './component/error';
 import WrappedRegisterForm from './component/Register';
-import WrappedAboutForm from './component/About'
+import WrappedAboutForm from './component/About';
 import WrappedForgetPasswordForm from'./component/ForgetPassword';
+import WrappedSignalmentForm from './component/Signalment';
 import HomePage from './component/HomePage';
 import Calendar from './component/Calendar';
 import Profile from './component/Profile';
-
 
 const routes=(
     <HashRouter>
@@ -21,7 +20,9 @@ const routes=(
          <Route path="/homepage" component={HomePage} />
          <Route path="/calendar" component={Calendar}/>
          <Route path="/profile" component={Profile}/>
+         <Route path="/signalment" component={WrappedSignalmentForm}/>
          <Route component={error}/>
+
       </Switch>
     </HashRouter>
 );

@@ -1,14 +1,17 @@
 import React from 'react';
-import styles from '../HomePage.css';
-import { Col,Form, Icon, Input, Button} from 'antd';
-const FormItem = Form.Item;
+import { Col,Form, Input, Button, notification} from 'antd';
 
+const FormItem = Form.Item;
 class ForgetPassword extends React.Component {
  handleSubmit = (e) => {
    e.preventDefault();
    this.props.form.validateFields((err, values) => {
      if (!err) {
        console.log('Received values of form: ', values);
+       notification.open({
+         message: 'Password Successfully reset',
+         description: 'Your password has been successfully reset.',
+       });
      }
    });
  }

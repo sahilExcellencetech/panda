@@ -1,7 +1,5 @@
-
 import React from 'react';
-import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+import {Col, Icon} from 'antd';
 
 const error =()=> (
   <div id="container">
