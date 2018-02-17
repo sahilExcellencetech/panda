@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import styles from '../index.css';
-import {Form,Col,ItemLayout, Icon, Input, Button, Checkbox } from 'antd';
-import style from 'antd/dist/antd.css';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+import {Form,Col, Input, Button, notification } from 'antd';
+
 
 const FormItem = Form.Item;
 const { TextArea } = Input;
@@ -11,8 +9,13 @@ class AboutForm extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
+
       if (!err) {
         console.log('Received values of form: ', values);
+          notification.open({
+            message: 'Successfully Updated',
+            description: 'Your information has been successfully updated.',
+          });
       }
     });
   }
@@ -25,8 +28,11 @@ class AboutForm extends React.Component {
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
             <p>Tell everything about yourself that potential client should
             Know about you!</p>
-            <div className="my-div" style={{width:'100%'}}>
+            <div id="about-Container">
               <FormItem>
+              {getFieldDecorator('about', {
+                rules: [{ required: true, message: 'Please Enter your information!' }],
+              })(
                 <TextArea id="TextArea" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -34,7 +40,9 @@ class AboutForm extends React.Component {
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum." autosize />
+                )}
               </FormItem>
+
                 <br/>
                 <br/>
               <FormItem>

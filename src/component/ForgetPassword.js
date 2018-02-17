@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import style from 'antd/dist/antd.css';
-import styles from '../index.css';
-import { Col,Form, Icon, Input, Button} from 'antd';
-import {BrowserRouter,Route,Link} from 'react-router-dom';
+
+import { Col,Form, Input, Button, notification} from 'antd';
+
 const FormItem = Form.Item;
 
 class ForgetPassword extends React.Component {
@@ -12,6 +10,10 @@ class ForgetPassword extends React.Component {
    this.props.form.validateFields((err, values) => {
      if (!err) {
        console.log('Received values of form: ', values);
+       notification.open({
+         message: 'Password Successfully reset',
+         description: 'Your password has been successfully reset.',
+       });
      }
    });
  }

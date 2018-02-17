@@ -2,6 +2,7 @@
   padding: 2px;
   box-shadow: 0px 11px 40px -1px #dee0df;
   margin-top: 5%;
+  color: white;
 }
 
 
@@ -19,12 +20,12 @@
   color: white;
 }
 
-.my-div .ant-row{
+#about-Container .ant-row{
   width:100%;
 }
 
-.my-div .ant-form-item-control-wrapper{
-  width:100%;
+#about-Container .ant-form-item-control-wrapper{
+width:100%;
 }
 
 input[type="text"]{
@@ -61,4 +62,66 @@ input[type="number"]{
 #fix{
   display: inline-block;
   width: 48%;
+}
+
+
+
+#professionalSince{
+width: 48%;
+min-width: 220px;
+display: inline-block;
+margin-right: 1.5%
+}
+
+#freelancerSince {
+  width: 48%;
+  min-width: 220px;
+  display: inline-block;
+}
+#signalment-Input-Distance{
+  width: 45%;
+  margin-left: 10%;
+  display: inline-block;
+}
+#signalment-Input-Location{
+  width: 45%;
+  display: inline-block;
+}
+
+#signalment-h4{
+    display:inline-block;
+}
+
+#signalment-Switch{
+  float:right;
+
+}
+#mycv-Container .ant-row{
+  width:100%;
+}
+
+#mycv-Container .ant-form-item-control-wrapper{
+width:100%;
+}
+#addEmployer{
+  background-color: rgba(80,80,80,.1);
+  padding:12px;
+  margin-top: 8px
+}
+#addEmployerCityDetails{
+  display:inline-block;
+  width:48%;
+  margin-right:4px
+}
+#addEmployerStartdate{
+  display:inline-block;
+  width:23%;
+  margin-right:4px
+}
+#addEmployerEnddate{
+  display:inline-block;
+  width:23%
+}
+#close{
+  float:right
 }
