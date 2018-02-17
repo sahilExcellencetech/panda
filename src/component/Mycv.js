@@ -1,19 +1,20 @@
 import React from 'react';
 import { Form,Col, Button,Select,notification} from 'antd';
 import _ from 'lodash';
+import WrappedAddemp from './Addemp'
 
 const FormItem = Form.Item;
 const { Option } = Select;
 const startYear= new Date().getFullYear();
 const endYear = startYear-50;
-let foo=[];
-foo = _.range(startYear,endYear);
+let year=[];
+year = _.range(startYear,endYear);
 
 class MyCVForm extends React.Component {
   constructor(props) {
     super(props);
     this.state={
-       data:foo,
+       data:year,
     }
   }
   handleChange=(value)=> {
@@ -36,7 +37,7 @@ class MyCVForm extends React.Component {
 
   render() {
     const { getFieldDecorator } = this.props.form;
-    const list=this.state.data.map((data,id)=>
+    const Yearlist=this.state.data.map((data,id)=>
     <Option key={data} value={data}>{data}</Option>
     );
 
@@ -54,7 +55,7 @@ class MyCVForm extends React.Component {
                     rules: [{ required: true, message:'Year is required'}],
                 })(
                     <Select placeholder="Professional Since"  onChange={this.handleChange}>
-                  {list}
+                  {Yearlist}
                     </Select>
                   )}
                   </FormItem>
@@ -66,7 +67,7 @@ class MyCVForm extends React.Component {
                   })(
 
                   <Select placeholder="Professional Since"  onChange={this.handleChange}>
-                {list}
+                {Yearlist}
                   </Select>
                   )}
                     </FormItem>
@@ -76,8 +77,8 @@ class MyCVForm extends React.Component {
                 <br/>
                   <p>Where you have been emploed before? Please add your employment history here.</p>
                   <br/>
-                  <p style={{ 'textAlign':'center' }}>Add Additional employer here</p>
-                  <br/>
+                   <WrappedAddemp />
+
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">
                   Save
