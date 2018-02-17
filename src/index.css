@@ -73,20 +73,23 @@ input[type="number"]{
   width: 48%;
 }
 
-
-
-#professionalSince{
-width: 48%;
-min-width: 220px;
-display: inline-block;
-margin-right: 1.5%
+#text-calendar{
+  
+  background-color: #4ad3b3;
+  border-radius: 2px;
+  padding: 4%;
 }
 
-#freelancerSince {
-  width: 48%;
-  min-width: 220px;
-  display: inline-block;
+
+#feb{
+  margin-top:7%;
 }
+#col-calendar{
+  padding-bottom: 20px;;
+  box-shadow: 0px 11px 40px -1px #dee0df; 
+  margin-bottom:20px; 
+}
+
 #signalment-Input-Distance{
   width: 45%;
   margin-left: 10%;

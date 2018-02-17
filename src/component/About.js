@@ -1,7 +1,5 @@
 import React from 'react';
-
 import {Form,Col, Input, Button, notification } from 'antd';
-
 
 const FormItem = Form.Item;
 const { TextArea } = Input;
@@ -44,10 +42,11 @@ class AboutForm extends React.Component {
               </FormItem>
 
                 <br/>
-                <br/>
+                <br/> 
+              
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">
-                  Save
+                  Save 
                 </Button>
               </FormItem>
             </div>
