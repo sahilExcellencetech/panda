@@ -24,61 +24,67 @@ class RegisterForm extends React.Component {
       <Col id="col" span={13} offset={5}>
         <div id="content">
           <h1>Finish Registration</h1>
-          <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
-            <div id="fix">
-            <FormItem>
-              E-Mail Address*
-              {getFieldDecorator('email', {
-                rules: [{
-              type: 'email', message: 'The input is not valid E-mail!',
-              }, {
-              required: true, message: 'Please input your E-mail!',
-              }],
-              })(
-                <Input type="email" />
-              )}
-            </FormItem>
-            </div>
-            <FormItem>
-              Password*
-              {getFieldDecorator('password', {
-                rules: [{ required: true, message: 'Please input your Password!' }],
-              })(
-                <Input  type="password" />
-              )}
-            </FormItem>
-            <FormItem >
-              First Name
-              {getFieldDecorator('firstname', {
-                rules: [{ required: true, message: 'First Name is required!' }],
-              })(<Input  type="text"/>)}
-            </FormItem>
-            <FormItem >
-              Last Name
-              {getFieldDecorator('lastname', {
-                rules: [{ required: true, message: 'Last Name is required!' }],
-              })(<Input  type="text"/>)}
-            </FormItem>
-            <div id="fix">
-            <FormItem >
-              Mobile Phone Number
-              {getFieldDecorator('number', {
-                rules: [{ required: true, message: 'Mobile Number is required!' }],
-              })(<Input  type="number"/>)}
-            </FormItem>
-            </div>
-            <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
-              when we recieve specific booking requests for you. By clicking the save
-              button, you accept our general terms and our data protection regulations.</p>
-              <div id="register-Container" >
-              <FormItem>
-                <Button htmlType="submit" id="register-form-button" className="login-form-button">
-                  Save now and start for free
-                </Button>
-              </FormItem>
-              </div>
+          <Form onSubmit={this.handleSubmit} className="login-form">
+           <div id="fix">
+           <FormItem>
+             E-Mail Address*
+             {getFieldDecorator('email', {
+               rules: [{
+             type: 'email', message: 'The input is not valid E-mail!',
+             }, {
+             required: true, message: 'Please input your E-mail!',
+             }],
+             })(
+               <Input type="email" />
+             )}
+           </FormItem>
+           </div>
+           <div id="fix-item">
+           <FormItem>
+             Password*
+             {getFieldDecorator('password', {
+               rules: [{ required: true, message: 'Please input your Password!' }],
+             })(
+               <Input  type="password" />
+             )}
+           </FormItem>
+           </div>
+           <div id="fix">
+           <FormItem >
+             First Name
+             {getFieldDecorator('firstname', {
+               rules: [{ required: true, message: 'First Name is required!' }],
+             })(<Input  type="text"/>)}
+           </FormItem>
+           </div>
+           <div id="fix-item">
+           <FormItem >
+             Last Name
+             {getFieldDecorator('lastname', {
+               rules: [{ required: true, message: 'Last Name is required!' }],
+             })(<Input  type="text"/>)}
+           </FormItem>
+           </div>
+           <div id="fix">
+           <FormItem >
+             Mobile Phone Number
+             {getFieldDecorator('number', {
+               rules: [{ required: true, message: 'Mobile Number is required!' }],
+             })(<Input  type="number"/>)}
+           </FormItem>
+           </div>
+           <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
+             when we recieve specific booking requests for you. By clicking the save
+             button, you accept our general terms and our data protection regulations.</p>
+             <div id="register-Container" >
+             <FormItem>
+               <Button htmlType="submit" id="register-form-button" className="login-form-button">
+                 Save now and start for free
+               </Button>
+             </FormItem>
+             </div>
 
-          </Form>
+         </Form>
         </div>
         <br/>
       </Col>

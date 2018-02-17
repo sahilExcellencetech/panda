@@ -28,6 +28,15 @@
 width:100%;
 }
 
+#register-Container .ant-row{
+  width:100%;
+}
+
+#register-Container .ant-form-item-control-wrapper{
+  width:100%;
+}
+
+
 input[type="text"]{
   height: 40px;
 }
@@ -125,10 +134,8 @@ width:100%;
 #close{
   float:right
 }
-#register-Container .ant-row{
-  width:100%;
-}
-
-#register-Container .ant-form-item-control-wrapper{
-width:100%;
+#fix-item{
+ margin-left: 2%;
+ display: inline-block;
+ width: 48%;
 }
