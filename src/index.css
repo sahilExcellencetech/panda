@@ -78,3 +78,20 @@ margin-right: 1.5%
   display: inline-block;
   /* float: left; */
 }
+#signalment-Input-Distance{
+  width: 45%;
+  margin-left: 10%;
+  display: inline-block;
+}
+#signalment-Input-Location{
+  width: 45%;
+  display: inline-block;
+}
+
+#signalment-h4{
+    display:inline-block;
+}
+
+#signalment-Switch{
+  float:right;
+}

@@ -15,6 +15,7 @@ const routes=(
          <Route path="/forgetpassword" component={WrappedForgetPasswordForm}/>
          <Route path="/about" component={WrappedAboutForm}/>
          <Route path="/mycv" component={WrappedMyCVForm}/>
+         <Route path="/signalment" component={WrappedSignalmentForm}/>
          <Route component={error}/>
 
       </Switch>
