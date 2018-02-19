@@ -26,10 +26,12 @@
 
 #about-Container .ant-form-item-control-wrapper{
 width:100%;
+
 }
 
 #register-Container .ant-row{
   width:100%;
+
 }
 
 #register-Container .ant-form-item-control-wrapper{
@@ -73,6 +75,19 @@ input[type="number"]{
 #fix{
   display: inline-block;
   width: 48%;
+}
+
+#professionalSince{
+width: 48%;
+min-width: 220px;
+display: inline-block;
+margin-right: 1.5%
+}
+
+#freelancerSince {
+  width: 48%;
+  min-width: 220px;
+  display: inline-block;
 }
 
 #text-calendar{
@@ -126,3 +141,31 @@ input[type="number"]{
 #mycv-Container .ant-form-item-control-wrapper{
 width:100%;
 }
+#addEmployer{
+  background-color: rgba(80,80,80,.1);
+  padding:12px;
+  margin-top: 8px
+}
+#addEmployerCityDetails{
+  display:inline-block;
+  width:48%;
+  margin-right:4px
+}
+#addEmployerStartdate{
+  display:inline-block;
+  width:23%;
+  margin-right:4px
+}
+#addEmployerEnddate{
+  display:inline-block;
+  width:23%
+}
+#close{
+  float:right
+}
+#fix-item{
+ margin-left: 2%;
+ display: inline-block;
+ width: 48%;
+}
+

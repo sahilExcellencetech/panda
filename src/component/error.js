@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Icon} from 'antd';
 
+
 const error =()=> (
   <div id="container">
     <Col id="col" span={10} offset={7}>
