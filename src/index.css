@@ -126,3 +126,27 @@ input[type="number"]{
 #mycv-Container .ant-form-item-control-wrapper{
 width:100%;
 }
+
+#profile-content{
+border-bottom: 1px solid rgba(128,128,128,.3);
+padding-top: 15px;
+padding-bottom: 15px;
+}
+#link{
+  color:black;
+}
+#text-profile{
+  margin-top: 7%;
+  margin-left: 9%;
+  font-size: 30px;
+  color: black;
+  margin-right: 9%;
+}
+#content-profile{
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 15px;
+  color:black;
+}
