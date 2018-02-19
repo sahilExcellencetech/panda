@@ -1,6 +1,6 @@
 import React from 'react';
 import style from 'antd/dist/antd.css';
-import {Form, Col,Select, notification, Input, Switch, Button } from 'antd';
+import {Form, Col,Select, notification, Input, Switch, Button,Icon } from 'antd';
 import {BrowserRouter,Route,Link} from 'react-router-dom';
 
 
@@ -30,7 +30,11 @@ class SingnalmentForm extends React.Component {
     const Option = Select.Option;
     const { getFieldDecorator } = this.props.form;
     return (
-      <Col id="col" span={10} offset={7}>
+
+      <div>
+
+            <Link to="/homepage"><Icon className="leftArrow" type="left" /></Link>
+      <div id="container">
       <div id="content">
       <h1>Signalment</h1>
       <Form  onSubmit={this.handleSubmit} >
@@ -121,7 +125,8 @@ class SingnalmentForm extends React.Component {
         </FormItem>
       </Form>
       </div>
-      </Col>
+      </div>
+      </div>
     );
   }
 }

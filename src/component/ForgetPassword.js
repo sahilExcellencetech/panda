@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col,Form, Input, Button, notification} from 'antd';
+import { Col,Form,Icon, Input, Button, notification} from 'antd';
+import {Link} from 'react-router-dom';
 const FormItem = Form.Item;
 class ForgetPassword extends React.Component {
  handleSubmit = (e) => {
@@ -17,7 +18,12 @@ class ForgetPassword extends React.Component {
  render() {
    const { getFieldDecorator } = this.props.form;
    return (
-     <Col id="col" span={10} offset={7}>
+     <div>
+
+     <Link to="/"><Icon className="leftArrow" type="left" /></Link>
+
+     <div id="container">
+
      <div id="content">
      <Form onSubmit={this.handleSubmit} className="login-form">
 
@@ -41,7 +47,8 @@ class ForgetPassword extends React.Component {
        </FormItem>
      </Form>
      </div>
-     </Col>
+     </div>
+     </div>
    );
  }
 }

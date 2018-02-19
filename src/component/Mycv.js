@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form,Col, Button,Select,notification} from 'antd';
+import { Form,Col, Button,Select,notification,Icon} from 'antd';
+import {Link} from 'react-router-dom';
 import _ from 'lodash';
 import WrappedAddemp from './Addemp'
 
@@ -43,7 +44,10 @@ class MyCVForm extends React.Component {
     );
 
     return (
-      <Col id="col" span={10} offset={7}>
+      <div>
+
+      <Link to="/homepage"><Icon className="leftArrow" type="left" /></Link>
+      <div id="container">
         <div id="content">
           <h1>My CV</h1>
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
@@ -67,7 +71,7 @@ class MyCVForm extends React.Component {
                       rules: [{ required: true, message:'Year is required'}],
                   })(
 
-                  <Select placeholder="Professional Since"  onChange={this.handleChange}>
+                  <Select placeholder="Freelancer Since"  onChange={this.handleChange}>
                 {Yearlist}
                   </Select>
                   )}
@@ -77,7 +81,7 @@ class MyCVForm extends React.Component {
                 <br/>
                 <br/>
                   <p>Where you have been emploed before? Please add your employment history here.</p>
-                  <br/>
+
 
                    <WrappedAddemp />
 
@@ -90,7 +94,9 @@ class MyCVForm extends React.Component {
             </div>
           </Form>
         </div>
-      </Col>
+      </div>
+      </div>
+
     );
   }
 }

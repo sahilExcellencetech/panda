@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 class Profile extends React.Component {
 render(){
     return(
-        <Col id="col-calendar" span={10} offset={6}>
+        <div id="containerHome" >
         <div id="text-profile"> asd asd<div id="profile-icon"><Icon type="picture" /></div></div>
             <div id="content-profile">
            <div id="profile-content"> <Link to="" id="link">My Website</Link></div>
@@ -16,8 +16,8 @@ render(){
            <div id="profile-content"> <Link to="" id="link">Verification</Link></div>
            <div id="profile-content"> <Link to="" id="link">Valuation</Link></div>
            <div id="profile-content"> <Link to="/" id="link">Logout</Link></div>
-             </div>   
-        </Col>
+             </div>
+        </div>
     );
 }
 }

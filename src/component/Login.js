@@ -23,7 +23,6 @@ class NormalLoginForm extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
     <div id="container">
-      <Col id="col" span={10} offset={7}>
       <div id="content">
       <h1>Login</h1>
 
@@ -59,7 +58,6 @@ class NormalLoginForm extends React.Component {
         </FormItem>
       </Form>
       </div>
-      </Col>
       </div>
     );
   }

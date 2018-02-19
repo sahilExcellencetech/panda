@@ -8,20 +8,22 @@ const TabPane = Tabs.TabPane;
 class HomePage extends React.Component {
   render(){
     return(
-      
-         <Tabs style={{width:'100%'}} >
-                  <TabPane  tab={<span><span id="tabs-icon"><Icon type="calendar" /><br/></span>
-                  <span >Calender</span></span>} key="1"><div><Calandar /></div></TabPane>
+<div id="tabs">
+         <Tabs  >
+                  <TabPane  tab={<div className="fontOfTab"><span className="iconAlign" id="tabs-icon"><Icon type="calendar" /><br/></span>
+                  <span >Calender</span></div>} key="1"><div><Calandar /></div></TabPane>
 
-                  <TabPane  tab={<span><span id="tabs-icon"><Icon type="mail" /><br/></span>
-                  <span >Inquerie </span></span>} key="2"><Inquiries/></TabPane>
+                  <TabPane  tab={<div className="fontOfTab"><div className="iconAlign" id="tabs-icon"><Icon type="mail" /></div>
+                  <span >Inquiries </span></div>} key="2"><Inquiries/></TabPane>
 
-                  <TabPane  tab={<span><span id="tabs-icon"><Icon type="bar-chart" /><br/></span>
-                  <span >Inovice</span></span>} key="3"><Inovice/></TabPane>
+                  <TabPane  tab={<div className="fontOfTab"><span className="iconAlign" id="tabs-icon"><Icon type="bar-chart" /><br/></span>
+                  <span >Inovice</span></div>} key="3"><Inovice/></TabPane>
 
-                  <TabPane  tab={<span><span id="tabs-icon"><Icon type="user" /><br/></span>
-                  <span >Profile</span></span>}key="4"><Profile/></TabPane>
+                  <TabPane  tab={<div className="fontOfTab"><span className="iconAlign" id="tabs-icon"><Icon type="user" /><br/></span>
+                  <span >Profile</span></div>} key="4"><Profile/></TabPane>
+
           </Tabs>
+  </div>
     );
   }
 }

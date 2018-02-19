@@ -26,22 +26,21 @@ class Calendar extends React.Component {
       const list=this.state.data.map((data,id)=>
       <Collapse bordered={false} key={data} >
             <Panel header={data}  >{text}</Panel>
-            
-        </Collapse> 
+        </Collapse>
 );
       return(
-<Col id="col-calendar" span={10} offset={6}>
+<div id="containerHome">
   <div id="content">
       <div id="text-calendar">
       On 8 November 2016, the Government of India announced the demonetisation
        of all ₹500 (US$7.80) and ₹1,000 (US$16) banknotes of the Mahatma Gandhi
-        
+
       </div>
       <h1 id="feb">February</h1>
     {list}
-       
+
      </div >
-  </Col>
+  </div>
       );
     }
 }

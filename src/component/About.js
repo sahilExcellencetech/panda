@@ -1,5 +1,6 @@
 import React from 'react';
-import {Form,Col, Input, Button, notification } from 'antd';
+import {Form,Col, Input, Button, notification,Icon } from 'antd';
+import {Link} from 'react-router-dom';
 
 const FormItem = Form.Item;
 const { TextArea } = Input;
@@ -20,7 +21,9 @@ class AboutForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Col id="col" span={10} offset={7}>
+      <div>
+            <Link to="/homepage"><Icon className="leftArrow" type="left" /></Link>
+      <div id="container">
         <div id="content">
           <h1>About Me</h1>
           <Form onSubmit={this.handleSubmit} layout="inline" className="login-form">
@@ -40,19 +43,18 @@ class AboutForm extends React.Component {
                 sunt in culpa qui officia deserunt mollit anim id est laborum." autosize />
                 )}
               </FormItem>
-
                 <br/>
-                <br/> 
-              
+                <br/>
               <FormItem>
                 <Button htmlType="submit" id="register-form-button" className="login-form-button">
-                  Save 
+                  Save
                 </Button>
               </FormItem>
             </div>
           </Form>
         </div>
-      </Col>
+      </div>
+      </div>
     );
   }
 }
