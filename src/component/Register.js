@@ -1,5 +1,5 @@
-import React from 'react'
-import { Form,Col,ItemLayout, Icon, Input, Button, Checkbox ,notification} from 'antd';
+import React from 'react';
+import { Form,Col, Input, Button, notification } from 'antd';
 
 const FormItem = Form.Item;
 class RegisterForm extends React.Component {
