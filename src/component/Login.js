@@ -11,6 +11,7 @@ class NormalLoginForm extends React.Component {
       if (!err) {
         console.log('Received values of form: ', values);
         this.props.history.push('/homepage');
+
         notification.open({
           message: 'Successfully Logged In',
           description: 'You are successfully Logged in.',
