@@ -20,7 +20,7 @@ class RegisterForm extends React.Component {
     const { getFieldDecorator } = this.props.form;
     return (
       <div>
-            <Link to="/homepage"><Icon className="leftArrow" type="left" /></Link>
+            <Link to="/"><Icon className="leftArrow" type="left" /></Link>
       <div id="container">
         <div id="content">
           <h1>Finish Registration</h1>
