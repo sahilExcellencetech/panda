@@ -8,6 +8,7 @@ import WrappedForgetPasswordForm from'./component/ForgetPassword';
 import WrappedSignalmentForm from './component/Signalment';
 import WrappedMyCVForm from './component/Mycv';
 import HomePage from './component/HomePage';
+import Calendar from './component/Calendar';
 
 
 const routes=(
