@@ -19,13 +19,7 @@ color:black;
 .ant-tabs-nav .ant-tabs-tab:hover{
     color:#4ad3b3;
 }
-.ant-tabs-ink-bar{
-  /* width: 22% */
-}
-#tabs{
-  /* margin-left:8%;
-  margin-right: 8% */
-}
+
 #containerHome{
   margin-left: 25%;
   margin-right: 25%;

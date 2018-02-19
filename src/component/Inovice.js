@@ -16,7 +16,7 @@ render(){
             wissen, liebe ich Zitate, da sie mit wenigen Worten Wesentliches auf den Punkt bringen.Gut,
             und hier sind sie also zum Thema Ruhe und Entspannung:Das beste aller Güter, wenn es
              überhaupt Güter gibt, ist die Ruhe,
-die Zurückgezogenheit und ein Plätzchen, das man sein eigen nennen kann.
+             die Zurückgezogenheit und ein Plätzchen, das man sein eigen nennen kann.
              </div>
         </div>
 
