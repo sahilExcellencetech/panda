@@ -76,7 +76,6 @@ class SingnalmentForm extends React.Component {
           })(
 
             <Input placeholder="Distance of work               km" />
-
           )}
         </FormItem>
         </div>

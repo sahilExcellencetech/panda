@@ -89,7 +89,7 @@ margin-right: 1.5%
 }
 
 #text-calendar{
-  
+
   background-color: #4ad3b3;
   border-radius: 2px;
   padding: 4%;
@@ -101,8 +101,8 @@ margin-right: 1.5%
 }
 #col-calendar{
   padding-bottom: 20px;;
-  box-shadow: 0px 11px 40px -1px #dee0df; 
-  margin-bottom:20px; 
+  box-shadow: 0px 11px 40px -1px #dee0df;
+  margin-bottom:20px;
 }
 
 
@@ -131,7 +131,6 @@ margin-right: 1.5%
 #mycv-Container .ant-form-item-control-wrapper{
 width:100%;
 }
-
 #addEmployer{
   background-color: rgba(80,80,80,.1);
   padding:12px;
@@ -154,4 +153,8 @@ width:100%;
 #close{
   float:right
 }
-
+#fix-item{
+ margin-left: 2%;
+ display: inline-block;
+ width: 48%;
+}

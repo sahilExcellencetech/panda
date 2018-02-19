@@ -5,10 +5,10 @@ import error from './component/error';
 import WrappedRegisterForm from './component/Register';
 import WrappedAboutForm from './component/About';
 import WrappedForgetPasswordForm from'./component/ForgetPassword';
-import WrappedMyCVForm from './component/Mycv';
 import WrappedSignalmentForm from './component/Signalment';
+import WrappedMyCVForm from './component/Mycv';
 import HomePage from './component/HomePage';
-import Calendar from './component/Calendar';
+
 
 const routes=(
     <HashRouter>
@@ -21,6 +21,7 @@ const routes=(
          <Route path="/homepage" component={HomePage} />
          <Route path="/calendar" component={Calendar}/>
          <Route path="/signalment" component={WrappedSignalmentForm}/>
+         <Route path="/mycv" component={WrappedMyCVForm}/>
          <Route component={error}/>
 
       </Switch>
