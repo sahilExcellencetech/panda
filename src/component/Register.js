@@ -1,5 +1,6 @@
 import React from 'react';
-import { Form,Col, Input, Button, notification } from 'antd';
+import { Form,Col, Input, Button, notification,Icon } from 'antd';
+import {Link} from 'react-router-dom';
 
 const FormItem = Form.Item;
 class RegisterForm extends React.Component {
@@ -18,74 +19,78 @@ class RegisterForm extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Col id="col" span={13} offset={5}>
+      <div>
+            <Link to="/homepage"><Icon className="leftArrow" type="left" /></Link>
+      <div id="container">
         <div id="content">
           <h1>Finish Registration</h1>
           <Form onSubmit={this.handleSubmit} className="login-form">
-           <div id="fix">
-           <FormItem>
-             E-Mail Address*
-             {getFieldDecorator('email', {
-               rules: [{
-             type: 'email', message: 'The input is not valid E-mail!',
-             }, {
-             required: true, message: 'Please input your E-mail!',
-             }],
-             })(
-               <Input type="email" />
-             )}
-           </FormItem>
-           </div>
-           <div id="fix-item">
-           <FormItem>
-             Password*
-             {getFieldDecorator('password', {
-               rules: [{ required: true, message: 'Please input your Password!' }],
-             })(
-               <Input  type="password" />
-             )}
-           </FormItem>
-           </div>
-           <div id="fix">
-           <FormItem >
-             First Name
-             {getFieldDecorator('firstname', {
-               rules: [{ required: true, message: 'First Name is required!' }],
-             })(<Input  type="text"/>)}
-           </FormItem>
-           </div>
-           <div id="fix-item">
-           <FormItem >
-             Last Name
-             {getFieldDecorator('lastname', {
-               rules: [{ required: true, message: 'Last Name is required!' }],
-             })(<Input  type="text"/>)}
-           </FormItem>
-           </div>
-           <div id="fix">
-           <FormItem >
-             Mobile Phone Number
-             {getFieldDecorator('number', {
-               rules: [{ required: true, message: 'Mobile Number is required!' }],
-             })(<Input  type="number"/>)}
-           </FormItem>
-           </div>
-           <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
-             when we recieve specific booking requests for you. By clicking the save
-             button, you accept our general terms and our data protection regulations.</p>
-             <div id="register-Container" >
-             <FormItem>
-               <Button htmlType="submit" id="register-form-button" className="login-form-button">
-                 Save now and start for free
-               </Button>
-             </FormItem>
-             </div>
+            <div className="fix">
+            <FormItem className="RegisterFormMargin">
+              E-Mail Address*
+              {getFieldDecorator('email', {
+                rules: [{
+              type: 'email', message: 'The input is not valid E-mail!',
+              }, {
+              required: true, message: 'Please input your E-mail!',
+              }],
+              })(
+                <Input type="email" />
+              )}
+            </FormItem>
+            </div>
+              <div className="fixField">
+            <FormItem >
 
+              Password*
+              {getFieldDecorator('password', {
+                rules: [{ required: true, message: 'Please input your Password!' }],
+              })(
+                <Input  type="password" />
+              )}
 
-         </Form>
+            </FormItem>
+            </div>
+            <div className="fixField">
+            <FormItem className="RegisterFormMargin">
+              First Name
+              {getFieldDecorator('firstname', {
+                rules: [{ required: true, message: 'First Name is required!' }],
+              })(<Input  type="text"/>)}
+            </FormItem>
+            </div>
+            <div className="fixField">
+            <FormItem >
+              Last Name
+              {getFieldDecorator('lastname', {
+                rules: [{ required: true, message: 'Last Name is required!' }],
+              })(<Input  type="text"/>)}
+            </FormItem>
+            </div>
+            <div className="fixField">
+            <FormItem >
+              Mobile Phone Number
+              {getFieldDecorator('number', {
+                rules: [{ required: true, message: 'Mobile Number is required!' }],
+              })(<Input  type="number"/>)}
+            </FormItem>
+            </div>
+            <p style={{'marginTop':'20px'}}><b>Important Note:</b> We will never publish your phone number - we justuse it,
+              when we recieve specific booking requests for you. By clicking the save
+              button, you accept our general terms and our data protection regulations.</p>
+              <div id="register-Container" >
+              <FormItem>
+                <Button htmlType="submit" id="register-form-button" className="login-form-button">
+                  Save now and start for free
+                </Button>
+              </FormItem>
+              </div>
+
+          </Form>
         </div>
         <br/>
-      </Col>
+      </div>
+      </div>
     );
   }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Form, Input, Icon, Select,Button } from 'antd';
 import _ from 'lodash';
-
 const FormItem = Form.Item;
 const { Option } = Select;
 const startYear= new Date().getFullYear();
@@ -27,7 +26,6 @@ class Addemp extends React.Component {
       keys: keys.filter(key => key !== k),
     });
   }
-
   add = () => {
     const { form } = this.props;
     const keys = form.getFieldValue('keys');
@@ -37,7 +35,6 @@ class Addemp extends React.Component {
       keys: nextKeys,
     });
   }
-
   render() {
     const Yearlist = this.state.data.map((data,id)=>
     <Option key={data} value={data}>{data}</Option>
@@ -84,9 +81,7 @@ class Addemp extends React.Component {
             <Input placeholder="Name of my employer*" style={{ width: '95%', marginRight: 8 }} />
           )}
         </FormItem>
-
         <br/>
-
         <br/>
         <div id="addEmployerCityDetails">
         <FormItem layout="inline">
@@ -132,16 +127,17 @@ class Addemp extends React.Component {
           )}
         </FormItem>
         </div>
-        </div>
+      </div>
 
       );
     });
     return (
       <div>
         {formItems}
-        <br />
+
         <FormItem {...formItemLayoutWithOutLabel}>
-          <p style={{ 'textAlign':'center',width:'70%' }} onClick={this.add}>
+        <br />
+          <p id="addEmployertext" onClick={this.add}>
              Add Additional employer here
           </p>
         </FormItem>
