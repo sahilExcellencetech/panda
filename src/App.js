@@ -6,9 +6,9 @@ import WrappedRegisterForm from './component/Register';
 import WrappedAboutForm from './component/About';
 import WrappedForgetPasswordForm from'./component/ForgetPassword';
 import WrappedSignalmentForm from './component/Signalment';
-import WrappedMyCVForm from './component/Mycv';
 import HomePage from './component/HomePage';
 import Calendar from './component/Calendar';
+import WrappedMyCVForm from './component/Mycv';
 
 
 const routes=(
@@ -18,7 +18,6 @@ const routes=(
          <Route path="/register" component={WrappedRegisterForm} />
          <Route path="/forgetpassword" component={WrappedForgetPasswordForm}/>
          <Route path="/about" component={WrappedAboutForm}/>
-         <Route path="/mycv" component={WrappedMyCVForm}/>
          <Route path="/homepage" component={HomePage} />
          <Route path="/calendar" component={Calendar}/>
          <Route path="/signalment" component={WrappedSignalmentForm}/>
